@@ -1,0 +1,26 @@
+Version: '4.0'
+Type: NeuralNetwork
+PredictionType: Classification
+PredictionOutput: Image
+Name: Carotid
+Description: Carotid segmentation
+Engine: torch
+EngineVersion: 1.8.1
+ModelFile: carotid.pt
+ForceCPU: false
+Verbose: false
+PreProcessing:
+- ConvertToGray: {}
+- MakeFloat: {}
+- Resample:
+    resolution: 0.25 0.25 1
+PostProcessing:
+- ArgMax: {}
+Sampling:
+- DimensionDivisor: 16
+- MaxSizeSubdivision: -1
+- PixelsOverlap: 16
+- RecombineWeighted: true
+- MirrorPadding: true
+- ExtendImage: false
+- Margin: 0

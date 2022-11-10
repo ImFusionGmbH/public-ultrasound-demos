@@ -1,0 +1,17 @@
+ObjectType = Image 
+NDims = 3 
+BinaryData = True 
+BinaryDataByteOrderMSB = False                  
+ElementSpacing = 1.000 1.000 1.000 
+DimSize = 256 256 192 
+Position = 135.818 -136.484 74.182
+Orientation = -0.080428 0.996609 0.017372 -0.097363 0.009490 -0.995204 -0.991994 -0.081734 0.096270                 
+ElementType = MET_USHORT 
+Modality = MET_MOD_MR
+WindowLevel = 321.000
+WindowWidth = 642.000
+ImageType1 = DERIVED
+ImageType2 = SECONDARY
+ImageType3 = VOLUME                 
+ElementDataFile = MR-FLAIR.raw 
+Creator = DICOMtoMetadataFilter

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2022-11-09 10:19:33">
+	<param name="workspaceVersion">20</param>
+	<property name="Datasets">
+		<property name="Data">
+			<param name="name">US_Processed</param>
+			<param name="blockId">0</param>
+			<param name="original">1</param>
+			<param name="topDown">1</param>
+			<param name="uid">data0</param>
+			<param name="transformation">-0.024197 -0.976294 0.21509 19.568439943 0.115015 -0.216443 -0.969497 -12.930204712 0.993069 0.00128 0.117526 -40.391005499 0 0 0 1 </param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">0</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">255</param>
+						<param name="level">127.5</param>
+						<param name="presetName">Ultrasound</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.3</param>
+									<param name="color">0.3 0.25 0.2 0.1 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.6</param>
+									<param name="color">1 1 1 0.2 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.65</param>
+									<param name="color">1 0.8 0.5 0.5 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">1 0.9 0.7 0.5 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="topDown">1</param>
+			<param name="name">MR-FLAIR</param>
+			<param name="original">1</param>
+			<param name="uid">data1</param>
+			<param name="transformation">-0.080428 0.996609 0.017372 18.156063156 -0.097363 0.00949 -0.995204 -39.154895778 -0.991994 -0.081734 0.09627 20.933756696 0 0 0 1 </param>
+			<property name="Components">
+				<property name="DisplayOptions2d">
+					<param name="gamma">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="windowingInitialized">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">1103</param>
+						<param name="level">551.5</param>
+						<param name="presetName"/>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+					</property>
+				</property>
+				<property name="DisplayOptions3d">
+					<param name="alpha">1</param>
+					<param name="invert">0</param>
+					<param name="useMask">1</param>
+					<param name="wlInOriginalValues">1</param>
+					<property name="TransferFunction">
+						<param name="window">1103</param>
+						<param name="level">551.5</param>
+						<param name="presetName">MRI Default</param>
+						<param name="textureSize">256</param>
+						<param name="mode">0</param>
+						<property name="Tissues">
+							<property name="Tissue">
+								<property name="KeyPoint">
+									<param name="position">0.2</param>
+									<param name="color">0.15 0 0 0 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.25</param>
+									<param name="color">0.501960784313725 0.125490196078431 0.0627450980392157 0.05 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.4</param>
+									<param name="color">0.8 0.627450980392157 0.36078431372549 0.2 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">0.5</param>
+									<param name="color">0.941176470588235 0.901960784313726 0.862745098039216 0.3 </param>
+								</property>
+								<property name="KeyPoint">
+									<param name="position">1</param>
+									<param name="color">1 1 1 0.3 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+			</property>
+		</property>
+	</property>
+	<property name="Interface">
+		<param name="outputUids">"data0" "data1" </param>
+		<param name="inputUids"/>
+	</property>
+	<property name="Algorithms">
+		<property name="ImFusionFile">
+			<param name="location">US_Processed.imf</param>
+			<param name="compressionMode">0</param>
+			<param name="passes">1</param>
+			<param name="dx">3</param>
+			<param name="dy">3</param>
+			<param name="ignoredDataComponentIds"/>
+			<param name="blockId">-1</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data0" </param>
+		</property>
+		<property name="MetaImage">
+			<param name="location">MR-FLAIR.mhd</param>
+			<param name="multiFile">0</param>
+			<param name="unsigned">0</param>
+			<param name="compress">0</param>
+			<param name="ignoreHalfPixelOffset">0</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data1" </param>
+		</property>
+		<property name="Ultrasound Registration">
+			<param name="targetVolumeSpacing">1</param>
+			<param name="relativeSweepSpacingPercent">100</param>
+			<param name="usVolSetMask">0</param>
+			<param name="usVolKeepZeros">1</param>
+			<param name="probeCompression">0</param>
+			<param name="usIsMoving">1</param>
+			<param name="globalInit">0</param>
+			<param name="sliceBased">0</param>
+			<param name="usSegModelPath"/>
+			<param name="usSegWeightStrength">1</param>
+			<param name="usSegWeightMaxDist">20</param>
+			<param name="usLandmarkWeightFWHM">0</param>
+			<param name="transformationMode">2</param>
+			<param name="resultFilename"/>
+			<param name="caseName"/>
+			<param name="inputUids">"data0" "data1" </param>
+			<param name="outputUids"/>
+		</property>
+	</property>
+	<property name="Display">
+		<param name="layoutMode">0</param>
+		<param name="focusedView">1</param>
+		<param name="viewOrder">0 1 2 3 4 </param>
+		<property name="Views">
+			<property name="0">
+				<param name="isVisible">0</param>
+				<param name="interpolation">1</param>
+				<param name="flip">0</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">0</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+				<param name="showOrientationMarkers">1</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="1">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">2</param>
+				<param name="zoom">1.99371553324308</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 -0 0 34.3069991429674 -0 1 -0 5.57326871628742 -0 0 1 -11.8712826545595 -0 0 -0 1 </param>
+				<param name="sliceMatrix">1 -0 0 34.3069991429674 -0 1 -0 5.57326871628742 -0 0 1 -11.8712826545595 -0 0 -0 1 </param>
+				<param name="showOrientationMarkers">1</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="2">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">2</param>
+				<param name="zoom">1.99371553324308</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">0 0 -1 41.9452182438836 1 0 0 16.3576008037404 0 -1 0 -11.9977825910838 0 0 0 1 </param>
+				<param name="sliceMatrix">0 0 -1 41.9452182438836 1 0 0 16.3576008037404 0 -1 0 -11.9977825910838 0 0 0 1 </param>
+				<param name="showOrientationMarkers">1</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="3">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">2</param>
+				<param name="zoom">1.99371553324308</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 42.0717182459335 0 0 1 16.4841009068272 0 -1 0 -11.9977825910838 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 42.0717182459335 0 0 1 16.4841009068272 0 -1 0 -11.9977825910838 0 0 0 1 </param>
+				<param name="showOrientationMarkers">1</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="4">
+				<param name="isVisible">1</param>
+				<param name="volumeRendererName">General Purpose Volume Renderer</param>
+				<param name="sceneCenter">42.0717182459335 16.3576008037404 -11.9977825910838 </param>
+				<param name="displayOptionsSource">1</param>
+				<param name="ssaoMode">0</param>
+				<property name="Camera">
+					<param name="poseMatrix">1 -0 0 -42.0717182459335 -0 0 1 11.9977825910838 -0 -1 0 -251.110310924567 0 0 -0 1 </param>
+					<param name="mode">0</param>
+					<param name="principalPoint">0.5 0.5 </param>
+					<param name="focalLength">1.37373870972731 1.37373870972731 </param>
+					<param name="frustumHeight">100</param>
+				</property>
+				<property name="VolumeRenderer">
+					<param name="mode">4</param>
+					<param name="showDeformations">0</param>
+					<param name="ambientAttenuationDistance">0</param>
+				</property>
+			</property>
+		</property>
+		<property name="VisibleData">
+			<property name="0">
+				<param name="visible"/>
+			</property>
+			<property name="1">
+				<param name="visible">"data0" "data1" </param>
+			</property>
+			<property name="2">
+				<param name="visible">"data0" "data1" </param>
+			</property>
+			<property name="3">
+				<param name="visible">"data0" "data1" </param>
+			</property>
+			<property name="4">
+				<param name="visible">"data0" "data1" </param>
+			</property>
+		</property>
+	</property>
+</propertyfile>

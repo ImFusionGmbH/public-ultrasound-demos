@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2022-11-09 10:28:15">
+	<param name="workspaceVersion">20</param>
+	<property name="Algorithms">
+		<property name="ImFusionFile">
+			<param name="location">three-sweeps.imf</param>
+			<param name="execute">1</param>
+			<param name="outputUids">"data0" "data1" "data2" </param>
+			<param name="inputUids"/>
+		</property>
+		<property name="Steered Compounding">
+			<param name="operationMode">0</param>
+			<param name="angleSpan">20</param>
+			<param name="fadeMargin">0.05</param>
+			<param name="verticalStretch">1</param>
+			<param name="windowSize">5</param>
+			<param name="costFunction">1</param>
+			<param name="topMarginMask">0</param>
+			<param name="fullWidth">0</param>
+			<param name="isotropic">0</param>
+			<param name="shift">0</param>
+			<param name="exportCost">0</param>
+			<param name="stretchMask">1</param>
+			<param name="useMask">1</param>
+			<param name="colorBlend">1</param>
+			<param name="useFrameAngles">1 1 1 </param>
+			<param name="useFrames">0</param>
+			<param name="isSoSKnown">0</param>
+			<param name="recordedSoS">1540</param>
+			<param name="knownSoS">1540</param>
+			<param name="optimizeAll">0</param>
+			<param name="frameSkip">0</param>
+			<param name="outputPath"/>
+			<param name="sweepName">sweep</param>
+			<param name="boneMask">1</param>
+			<param name="predictionThreshold">0.5</param>
+			<param name="dilatationPrediction">0</param>
+			<param name="dilatationMask">10</param>
+			<param name="inputUids">"data0" "data1" "data2" </param>
+			<param name="outputUids"/>
+		</property>
+	</property>
+	<property name="Display">
+		<param name="layoutMode">2</param>
+		<param name="focusedView">0</param>
+		<param name="viewOrder">0 1 2 3 4 </param>
+		<property name="Views">
+			<property name="0">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1.69893230861855</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="1">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 -345.438307728384 0 1 0 -675.171513611635 0 0 1 49.0489413761627 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 -345.438307728384 0 1 0 -675.171513611635 0 0 1 49.0489413761627 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="2">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">0 0 -1 -345.438307728384 1 0 0 -675.171513611635 0 -1 0 49.0489413761627 0 0 0 1 </param>
+				<param name="sliceMatrix">0 0 -1 -345.438307728384 1 0 0 -675.171513611635 0 -1 0 49.0489413761627 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="3">
+				<param name="isVisible">1</param>
+				<param name="interpolation">1</param>
+				<param name="flip">1</param>
+				<param name="blendingMode">1</param>
+				<param name="zoom">1</param>
+				<param name="showZoom">1</param>
+				<param name="showIn3D">1</param>
+				<param name="viewMatrix">1 0 0 -345.438307728384 0 0 1 -675.171513611635 0 -1 0 49.0489413761627 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 -345.438307728384 0 0 1 -675.171513611635 0 -1 0 49.0489413761627 0 0 0 1 </param>
+				<param name="showOrientationMarkers">0</param>
+				<param name="displayOptionsSource">1</param>
+				<param name="sliceThickness">0</param>
+			</property>
+			<property name="4">
+				<param name="isVisible">1</param>
+				<param name="volumeRendererName">General Purpose Volume Renderer</param>
+				<param name="sceneCenter">-344.911999016208 -675.434816051617 50.0154967430696 </param>
+				<param name="displayOptionsSource">1</param>
+				<param name="ssaoMode">0</param>
+				<property name="Camera">
+					<param name="poseMatrix">1 0 -0 344.911999016208 0 -0 1 -50.0154967430696 -0 -1 0 -1096.1930176351 0 0 -0 1 </param>
+					<param name="mode">0</param>
+					<param name="principalPoint">0.5 0.5 </param>
+					<param name="focalLength">1.37373870972731 1.37373870972731 </param>
+					<param name="frustumHeight">100</param>
+				</property>
+				<property name="VolumeRenderer">
+					<param name="mode">4</param>
+					<param name="showDeformations">0</param>
+					<param name="ambientAttenuationDistance">0</param>
+				</property>
+			</property>
+		</property>
+		<property name="VisibleData">
+			<property name="0">
+				<param name="visible">"data0" "data1" "data2" </param>
+			</property>
+			<property name="1">
+				<param name="visible">"data0" "data1" "data2" </param>
+			</property>
+			<property name="2">
+				<param name="visible">"data0" "data1" "data2" </param>
+			</property>
+			<property name="3">
+				<param name="visible">"data0" "data1" "data2" </param>
+			</property>
+			<property name="4">
+				<param name="visible">"data0" "data1" "data2" </param>
+			</property>
+		</property>
+	</property>
+</propertyfile>
