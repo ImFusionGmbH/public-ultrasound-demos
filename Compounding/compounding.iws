@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2022-11-09 11:26:57">
-	<param name="workspaceVersion">20</param>
+<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2024-07-24 15:52:18">
+	<param name="workspaceVersion">26</param>
 	<property name="Datasets">
 		<property name="Data">
 			<param name="topDown">1</param>
@@ -14,11 +14,15 @@
 			<property name="MetaData">
 				<param name="topDown">1</param>
 			</property>
+			<property name="MetaData">
+				<param name="topDown">1</param>
+			</property>
 			<property name="Components">
 				<property name="DisplayOptions2d">
 					<param name="gamma">1</param>
 					<param name="invert">0</param>
-					<param name="useMask">1</param>
+					<param name="maskingMode">1</param>
+					<param name="maskColor">1 0 0 0.5 </param>
 					<param name="windowingInitialized">0</param>
 					<param name="wlInOriginalValues">1</param>
 					<property name="TransferFunction">
@@ -32,7 +36,8 @@
 				<property name="DisplayOptions3d">
 					<param name="alpha">1</param>
 					<param name="invert">0</param>
-					<param name="useMask">1</param>
+					<param name="maskingMode">1</param>
+					<param name="maskColor">1 0 0 0.5 </param>
 					<param name="wlInOriginalValues">1</param>
 					<property name="TransferFunction">
 						<param name="window">255</param>
@@ -70,19 +75,20 @@
 		<param name="inputUids"/>
 	</property>
 	<property name="Algorithms">
-		<property name="ImFusionFile">
+		<property name="IO.ImFusionFileIo">
 			<param name="location">US-Forearm-Sweep-h264.imf</param>
 			<param name="compressionMode">0</param>
 			<param name="passes">1</param>
 			<param name="dx">3</param>
 			<param name="dy">3</param>
+			<param name="saveUnrestoredDataComponents">1</param>
 			<param name="ignoredDataComponentIds"/>
 			<param name="blockId">-1</param>
 			<param name="execute">1</param>
 			<param name="inputUids"/>
 			<param name="outputUids">"data0" </param>
 		</property>
-		<property name="Change Selection">
+		<property name="Base.ChangeSelection">
 			<param name="first">0</param>
 			<param name="last">656</param>
 			<param name="skip">0</param>
@@ -91,10 +97,11 @@
 			<param name="inputUids">"data0" </param>
 			<param name="outputUids"/>
 		</property>
-		<property name="Sweep Compounding">
+		<property name="US.GlSweepCompounding">
 			<param name="backgroundIntensity">0</param>
 			<param name="boundingBox">2</param>
 			<param name="individualCompoundings">0</param>
+			<param name="maximumBlendingDistance">0</param>
 			<param name="inputUids">"data0" </param>
 			<param name="outputUids"/>
 		</property>
@@ -174,9 +181,15 @@
 					<param name="frustumHeight">100</param>
 				</property>
 				<property name="VolumeRenderer">
-					<param name="mode">4</param>
+					<param name="maxVolumesToDisplay">4</param>
 					<param name="showDeformations">0</param>
+					<param name="samplesPerVoxel">1</param>
+					<param name="mode">4</param>
 					<param name="ambientAttenuationDistance">0</param>
+				</property>
+				<property name="SSAO">
+					<param name="ssaoStrength">0.75</param>
+					<param name="occlusionRadius">21</param>
 				</property>
 			</property>
 		</property>

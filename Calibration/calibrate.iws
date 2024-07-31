@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2022-11-09 14:06:30">
-	<param name="workspaceVersion">20</param>
+<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2024-07-24 15:41:37">
+	<param name="workspaceVersion">26</param>
 	<property name="Datasets">
 		<property name="Data">
 			<param name="topDown">1</param>
@@ -12,7 +12,8 @@
 				<property name="DisplayOptions2d">
 					<param name="gamma">1</param>
 					<param name="invert">0</param>
-					<param name="useMask">1</param>
+					<param name="maskingMode">1</param>
+					<param name="maskColor">1 0 0 0.5 </param>
 					<param name="windowingInitialized">1</param>
 					<param name="wlInOriginalValues">1</param>
 					<property name="TransferFunction">
@@ -26,7 +27,8 @@
 				<property name="DisplayOptions3d">
 					<param name="alpha">1</param>
 					<param name="invert">0</param>
-					<param name="useMask">1</param>
+					<param name="maskingMode">1</param>
+					<param name="maskColor">1 0 0 0.5 </param>
 					<param name="wlInOriginalValues">1</param>
 					<property name="TransferFunction">
 						<param name="window">255</param>
@@ -68,7 +70,8 @@
 				<property name="DisplayOptions2d">
 					<param name="gamma">1</param>
 					<param name="invert">0</param>
-					<param name="useMask">1</param>
+					<param name="maskingMode">1</param>
+					<param name="maskColor">1 0 0 0.5 </param>
 					<param name="windowingInitialized">1</param>
 					<param name="wlInOriginalValues">1</param>
 					<property name="TransferFunction">
@@ -82,7 +85,8 @@
 				<property name="DisplayOptions3d">
 					<param name="alpha">1</param>
 					<param name="invert">0</param>
-					<param name="useMask">1</param>
+					<param name="maskingMode">1</param>
+					<param name="maskColor">1 0 0 0.5 </param>
 					<param name="wlInOriginalValues">1</param>
 					<property name="TransferFunction">
 						<param name="window">255</param>
@@ -120,19 +124,20 @@
 		<param name="inputUids"/>
 	</property>
 	<property name="Algorithms">
-		<property name="ImFusionFile">
+		<property name="IO.ImFusionFileIo">
 			<param name="location">orthogonal-sweeps.imf</param>
 			<param name="compressionMode">0</param>
 			<param name="passes">1</param>
 			<param name="dx">3</param>
 			<param name="dy">3</param>
+			<param name="saveUnrestoredDataComponents">1</param>
 			<param name="ignoredDataComponentIds"/>
 			<param name="blockId">-1</param>
 			<param name="execute">1</param>
 			<param name="inputUids"/>
 			<param name="outputUids">"data0" "data1" </param>
 		</property>
-		<property name="Change Selection">
+		<property name="Base.ChangeSelection">
 			<param name="first">0</param>
 			<param name="last">538</param>
 			<param name="skip">0</param>
@@ -141,7 +146,7 @@
 			<param name="inputUids">"data0" </param>
 			<param name="outputUids"/>
 		</property>
-		<property name="Ultrasound Calibration">
+		<property name="US.UltrasoundCalibration">
 			<param name="mode">-1</param>
 			<param name="maxFrames">0</param>
 			<param name="minOverlap">0</param>
@@ -151,32 +156,11 @@
 			<property name="SimilarityMeasure">
 				<param name="mode">2</param>
 				<param name="gpu">1</param>
+				<param name="patchSize">9</param>
+				<param name="absCorr">0</param>
+				<param name="weighting">1</param>
 				<param name="useImg1Mask">1</param>
 				<param name="useImg2Mask">1</param>
-			</property>
-		</property>
-		<property name="">
-			<param name="temporal">0</param>
-			<param name="useTimestamps">1</param>
-			<param name="trackingUsed">0</param>
-			<param name="calibration">0.184164711831122 0.982886989663831 0.00406502961020507 108.48 0.982179171881952 -0.183871082673697 -0.0389294140424024 -2.81 -0.0375157731819847 0.0111620117351003 -0.999233694516244 9.91 0 0 0 1 </param>
-			<param name="registration">1 0 0 -165.878609198835 0 1 0 -66.295772179612 0 0 1 -623.988390574604 0 0 0 1 </param>
-			<param name="clearMetadata">0</param>
-			<param name="sizeX">37.4352952453988</param>
-			<param name="sizeY">40</param>
-			<param name="topDown">1</param>
-			<param name="inputUids"/>
-			<param name="outputUids"/>
-			<property name="frameGeometry">
-				<property name="FrameGeometryLinear">
-					<param name="offset">81.5 -0.5 </param>
-					<param name="isTopDown">1</param>
-					<param name="indicatorPosition">0</param>
-					<param name="coordinateSystem">0</param>
-					<param name="width">164</param>
-					<param name="depth">524</param>
-					<param name="steeringAngle">0</param>
-				</property>
 			</property>
 		</property>
 	</property>
@@ -255,9 +239,15 @@
 					<param name="frustumHeight">100</param>
 				</property>
 				<property name="VolumeRenderer">
-					<param name="mode">4</param>
+					<param name="maxVolumesToDisplay">4</param>
 					<param name="showDeformations">0</param>
+					<param name="samplesPerVoxel">1</param>
+					<param name="mode">4</param>
 					<param name="ambientAttenuationDistance">0</param>
+				</property>
+				<property name="SSAO">
+					<param name="ssaoStrength">0.75</param>
+					<param name="occlusionRadius">21</param>
 				</property>
 			</property>
 			<property name="5">
@@ -276,7 +266,8 @@
 				<property name="DisplayOptions">
 					<param name="gamma">1</param>
 					<param name="invert">0</param>
-					<param name="useMask">1</param>
+					<param name="maskingMode">1</param>
+					<param name="maskColor">1 0 0 0.5 </param>
 					<param name="windowingInitialized">0</param>
 					<param name="wlInOriginalValues">1</param>
 					<property name="TransferFunction">
@@ -306,7 +297,7 @@
 				<param name="visible">"data0" "data1" </param>
 			</property>
 			<property name="5">
-				<param name="visible">"" "" </param>
+				<param name="visible"/>
 			</property>
 		</property>
 	</property>
