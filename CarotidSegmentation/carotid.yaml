@@ -21,6 +21,6 @@ Sampling:
 - MaxSizeSubdivision: -1
 - PixelsOverlap: 16
 - RecombineWeighted: true
-- MirrorPadding: true
+- PaddingMode: Mirror
 - ExtendImage: false
 - Margin: 0

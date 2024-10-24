@@ -63,14 +63,14 @@
 		<param name="inputUids"/>
 	</property>
 	<property name="Algorithms">
-		<property name="ImFusionFile">
+		<property name="IO.ImFusionFileIo">
 			<param name="location">carotid-sweep.imf</param>
 			<param name="blockId">-1</param>
 			<param name="execute">1</param>
 			<param name="inputUids"/>
 			<param name="outputUids">"data0" </param>
 		</property>
-		<property name="Run Machine Learning Model">
+		<property name="ML.MachineLearningModel">
 			<param name="configPath">carotid.yaml</param>
 			<param name="execute">1</param>
 			<param name="inputUids">"data0" </param>
