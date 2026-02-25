@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<propertyfile version="1.1" name="" comment="Written by ImFusionLib, 2026-02-23 15:56:59">
+	<param name="workspaceVersion">35</param>
+	<property name="Datasets">
+		<property name="Data">
+			<param name="uid">data0</param>
+			<param name="name">Fake Franka Panda Stream</param>
+			<property name="Configuration">
+				<param name="JointPosition">-0.073633405450914 -0.582134754869453 -0.311156479303265 -1.94233283071709 -0.172116466617294 1.38528955296202 0.417276224104752 </param>
+				<property name="Instance">
+					<param name="World_T_Base">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+					<param name="Flange_T_Effector">1 0 0 0 0 0.8660254 -0.5 -30 0 0.5 0.8660254 163.37822174 0 0 0 1 </param>
+					<property name="AttachedObjects">
+						<property name="AttachedObject0">
+							<param name="Flange_T_AttachedObject">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+							<param name="AttachedObjectMeshPath">butterfly_and_holder.stl</param>
+						</property>
+					</property>
+					<property name="Groups">
+						<property name="panda_arm">
+							<property name="ready">
+								<property name="Joints">
+									<param name="panda_joint1">0 </param>
+									<param name="panda_joint2">-0.785398163397448 </param>
+									<param name="panda_joint3">0 </param>
+									<param name="panda_joint4">-2.35619449019234 </param>
+									<param name="panda_joint5">0 </param>
+									<param name="panda_joint6">1.5707963267949 </param>
+									<param name="panda_joint7">0.785398163397448 </param>
+								</property>
+							</property>
+							<property name="extended">
+								<property name="Joints">
+									<param name="panda_joint1">0 </param>
+									<param name="panda_joint2">0 </param>
+									<param name="panda_joint3">0 </param>
+									<param name="panda_joint4">-0.1 </param>
+									<param name="panda_joint5">0 </param>
+									<param name="panda_joint6">1.5707963267949 </param>
+									<param name="panda_joint7">0.785398163397448 </param>
+								</property>
+							</property>
+						</property>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Data">
+			<param name="uid">data1</param>
+			<param name="name">Robot US Tracking Stream</param>
+		</property>
+	</property>
+	<property name="Interface">
+		<param name="outputUids">"data0" "data1" </param>
+		<param name="inputUids"/>
+	</property>
+	<property name="Algorithms">
+		<property name="Robotics.CreateRobotStream">
+			<param name="robotType">Franka Emika Panda</param>
+			<param name="execute">1</param>
+			<param name="inputUids"/>
+			<param name="outputUids">"data0" </param>
+		</property>
+		<property name="Robotics.CreateRobotUSTrackingStream">
+			<param name="execute">1</param>
+			<param name="inputUids">"data0" </param>
+			<param name="outputUids">"data1" </param>
+		</property>
+		<property name="Stream.TrackingStreamProperties">
+			<param name="registration">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+			<param name="mainInstrument"/>
+			<param name="execute">1</param>
+			<param name="inputUids">"data1" </param>
+			<param name="outputUids"/>
+			<property name="Components">
+				<property name="InstrumentCalibrationDataComponent">
+					<property name="Calibration0">
+						<param name="spatial">1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 </param>
+						<param name="temporal">0</param>
+						<param name="instrument">*-uscenter</param>
+					</property>
+					<property name="Calibration1">
+						<param name="spatial">1 0 0 0 0 1 0 57 0 0 1 0 0 0 0 1 </param>
+						<param name="temporal">0</param>
+						<param name="instrument">usc</param>
+					</property>
+				</property>
+			</property>
+		</property>
+		<property name="Robotics.ManageRobotStream">
+			<param name="inputUids">"data0" </param>
+			<param name="outputUids"/>
+			<property name="Controller">
+				<property name="GoalSubcontroller">
+					<param name="transOffset">20</param>
+					<param name="rotOffset">-180</param>
+					<param name="radius">35</param>
+				</property>
+			</property>
+		</property>
+	</property>
+	<property name="Display">
+		<property name="Views">
+			<property name="0">
+				<param name="flip">1</param>
+				<param name="zoom">1.1</param>
+				<param name="showZoom">1</param>
+			</property>
+			<property name="1">
+				<param name="flip">1</param>
+				<param name="showZoom">1</param>
+				<param name="viewMatrix">1 0 0 300 0 1 0 1.89326617253043e-29 0 0 1 400.5 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 300 0 1 0 1.888952089455e-29 0 0 1 400.5 0 0 0 1 </param>
+			</property>
+			<property name="2">
+				<param name="flip">1</param>
+				<param name="showZoom">1</param>
+				<param name="viewMatrix">0 0 -1 299.5 1 0 0 1.89326617253043e-29 0 -1 0 400 0 0 0 1 </param>
+				<param name="sliceMatrix">0 0 -1 299.5 1 0 0 1.89326617253043e-29 0 -1 0 400 0 0 0 1 </param>
+			</property>
+			<property name="3">
+				<param name="flip">1</param>
+				<param name="showZoom">1</param>
+				<param name="viewMatrix">1 0 0 300 0 0 1 1.89326617253043e-29 0 -1 0 400 0 0 0 1 </param>
+				<param name="sliceMatrix">1 0 0 300 0 0 1 1.89326617253043e-29 0 -1 0 400 0 0 0 1 </param>
+			</property>
+			<property name="4">
+				<param name="volumeRendererName">Global Illumination Volume Renderer</param>
+				<param name="sceneCenter">300 1.89326617253043e-29 400 </param>
+				<param name="ssaoMode">1</param>
+				<property name="Camera">
+					<param name="poseMatrix">-0.0348994967025007 0.999390827019096 -2.83193607453214e-16 189.91715756302 -0.0731935823967714 -0.0025559762191526 0.997314477224458 -362.18215260198 0.996706940191468 0.0348057733092512 0.0732381971276317 -2418.66556574731 -0 0 0 1 </param>
+					<param name="focalLength">1.37373870972731 1.37373870972731 </param>
+				</property>
+				<property name="VolumeRenderer">
+					<param name="maxVolumesToDisplay">4</param>
+					<param name="useShadow">1</param>
+					<param name="shadowVolumeSize">128</param>
+					<param name="shadowAttenuation">0.9825</param>
+					<param name="chromaDepthMode">1</param>
+				</property>
+				<property name="SSAO">
+					<param name="ssaoStrength">0.75</param>
+					<param name="occlusionRadius">21</param>
+				</property>
+			</property>
+		</property>
+		<property name="VisibleData">
+			<property name="0">
+				<param name="visible"/>
+			</property>
+			<property name="1">
+				<param name="visible"/>
+			</property>
+			<property name="2">
+				<param name="visible"/>
+			</property>
+			<property name="3">
+				<param name="visible"/>
+			</property>
+			<property name="4">
+				<param name="visible"/>
+			</property>
+		</property>
+	</property>
+</propertyfile>
