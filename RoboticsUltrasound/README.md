@@ -2,6 +2,8 @@
 
 This demo attempts to show the capabilities of the ImFusionSuite to perform an Robotics Ultrasound simulation in which, from an already segmented CT scan and a simulated Robot with an ultrasound probe as a tool at the TCP, a simulated US scan can be run.
 
+![Demo](demo.gif)
+
 In order to run the demo:
 1. Run `ImFusionSuite SimFrankaHolder.iws`
 2. Open the `ProcessedCT.imf` in the Suite, either drag-and-drop or using the `Open` utility in the upper bar of the Suite
