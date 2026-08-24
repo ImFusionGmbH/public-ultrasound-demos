@@ -4,13 +4,14 @@ This demo attempts to show the capabilities of the ImFusionSuite to perform an R
 
 ![Demo](demo.gif)
 
+Pre-requisites:
+- Make sure you have a NVidia GPU and nvidia drivers are active for best performance
+
 In order to run the demo:
-1. Run `ImFusionSuite SimFrankaHolder.iws`
-2. Open the `ProcessedCT.imf` in the Suite, either drag-and-drop or using the `Open` utility in the upper bar of the Suite
-3. Select the new `ProcessedCT` and the `Robot US Tracking Stream` on the `Data` section, right-click somewhere on the `Data` section, Ultrasound->Advanced->Virtual Imaging Algorithm. Click `Start stream`.
-3. Select `Robot US TrackingStream` and `Image Stream` on the `Data` section, right-click somewhere on the `Data` section, Ultrasound->Record Ultrasound Sweeps
+1. Run `ImFusionSuite RoboticsUltrasoundDemo.iws` and click `Start stream` on the newly created `Virtual Imaging Algorithm` widget.
+2. Select `Robot US TrackingStream` and `Image Stream` on the `Data` section, right-click somewhere on the `Data` section, Ultrasound->Record Ultrasound Sweeps
     - In the `Advanced settings` section, reduce the `Sweep buffer` from 50 to 1 to improve performance
-4. Move around with the TCP of the robot to simulate what a ultrasound scan would look like
+3. Move around the goal TCP of the robot to any desired position and click `Go` at the bottom of the the `Manage Robot Stream` widget.
 
 If you adjust the short-long radius of the Virtual Imaging Algorithm, don't forget to adjust the Calibration data of the Tracking stream: select the `Robot US Tracking Stream` in the `Data` section, right-click on the `Data` section, Streaming->Tracking Stream Properties
 Some considerations:
