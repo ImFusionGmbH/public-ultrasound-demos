@@ -126,7 +126,7 @@
                         <param name="indexInFile">0</param>
                         <property name="algorithmConfiguration">
                             <param name="forceCannotLoad">0</param>
-                            <param name="location">/home/pablo/Projects/public-ultrasound-demos/RoboticsUltrasound/ProcessedCT.imf</param>
+                            <param name="location">ProcessedCT.imf</param>
                             <param name="compressionMode">65</param>
                             <param name="passes">1</param>
                             <param name="dx">3</param>
@@ -136,12 +136,12 @@
                             <param name="blockId">-1</param>
                         </property>
                         <property name="history_1">
-                            <param name="filename">/home/pablo/Projects/public-ultrasound-demos/RoboticsUltrasound/SegmentedFilteredCT.imf</param>
+                            <param name="filename">SegmentedFilteredCT.imf</param>
                             <param name="algorithmName">IO.ImFusionFileIo</param>
                             <param name="indexInFile">0</param>
                             <property name="algorithmConfiguration">
                                 <param name="forceCannotLoad">0</param>
-                                <param name="location">/home/pablo/Projects/public-ultrasound-demos/RoboticsUltrasound/SegmentedFilteredCT.imf</param>
+                                <param name="location">SegmentedFilteredCT.imf</param>
                                 <param name="compressionMode">65</param>
                                 <param name="passes">1</param>
                                 <param name="dx">3</param>
@@ -152,12 +152,12 @@
                             </property>
                         </property>
                         <property name="history_2">
-                            <param name="filename">/home/pablo/Projects/public-ultrasound-demos/RoboticsUltrasound/CT.imf</param>
+                            <param name="filename">CT.imf</param>
                             <param name="algorithmName">IO.ImFusionFileIo</param>
                             <param name="indexInFile">0</param>
                             <property name="algorithmConfiguration">
                                 <param name="forceCannotLoad">0</param>
-                                <param name="location">/home/pablo/Projects/public-ultrasound-demos/RoboticsUltrasound/CT.imf</param>
+                                <param name="location">CT.imf</param>
                                 <param name="compressionMode">65</param>
                                 <param name="passes">1</param>
                                 <param name="dx">3</param>
@@ -1828,7 +1828,7 @@
         </property>
         <property name="IO.ImFusionFileIo">
             <param name="forceCannotLoad">0</param>
-            <param name="location">/home/pablo/Projects/public-ultrasound-demos/RoboticsUltrasound/ProcessedCT.imf</param>
+            <param name="location">ProcessedCT.imf</param>
             <param name="compressionMode">65</param>
             <param name="passes">1</param>
             <param name="dx">3</param>
